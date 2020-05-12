@@ -4,9 +4,20 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+const names = [
+  {
+    name: 'jane',
+    age: 4
+  },
+  {
+    name: 'josh',
+    age: 3
+  }
+]
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App people={names}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
